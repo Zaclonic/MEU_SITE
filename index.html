@@ -1,55 +1,172 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Página Simples</title>
+    <meta name="description" content="Portfólio do Projeto FAKE - Verificação de Notícias com IA">
+    <title>Projeto FAKE - Portfólio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #0D47A1;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #1565C0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #0D47A1;
+        }
+
+        .description {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .member {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .member h3 {
+            font-size: 1.5em;
+            color: #0D47A1;
+        }
+
+        .footer {
+            background-color: #0D47A1;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<body style="font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background-color: #f5f7fa; color: #333; line-height: 1.6;">
-    <header style="background: linear-gradient(135deg, #6e8efb, #a777e3); color: white; text-align: center; padding: 2rem 0; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-        <h1 style="margin: 0; font-size: 2.5rem;">Bem-vindo à Minha Página</h1>
-        <p style="font-size: 1.2rem; margin-top: 0.5rem;">Uma demonstração de HTML com estilo inline</p>
+<body>
+
+    <header>
+        <h1>Projeto EH FAKE</h1>
+        <p>Verificação de Notícias com Inteligência Artificial</p>
     </header>
-    
-    <nav style="background-color: #fff; padding: 1rem 0; text-align: center; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);">
-        <a href="#" style="text-decoration: none; color: #6e8efb; margin: 0 15px; font-weight: 500;">Início</a>
-        <a href="#" style="text-decoration: none; color: #6e8efb; margin: 0 15px; font-weight: 500;">Sobre</a>
-        <a href="#" style="text-decoration: none; color: #6e8efb; margin: 0 15px; font-weight: 500;">Serviços</a>
-        <a href="#" style="text-decoration: none; color: #6e8efb; margin: 0 15px; font-weight: 500;">Contato</a>
+
+    <nav>
+        <a href="#sobre">Sobre o Projeto</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#contato">Contato</a>
     </nav>
-    
-    <main style="max-width: 1200px; margin: 2rem auto; padding: 0 20px;">
-        <section style="background-color: white; border-radius: 8px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);">
-            <h2 style="color: #6e8efb; margin-top: 0;">Sobre Nós</h2>
-            <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <button style="background-color: #6e8efb; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: bold;">Saiba Mais</button>
+
+    <div class="container">
+
+        <section id="sobre">
+            <h2 class="section-title">Sobre o Projeto</h2>
+            <p class="description">
+                O <strong>Projeto FAKE</strong> é uma iniciativa desenvolvida por um grupo de estudantes da FCTE, com o objetivo de 
+                criar uma ferramenta baseada em Inteligência Artificial para avaliar a veracidade de notícias.
+                Através da mineração de sites de notícias, a IA lê o conteúdo e determina se a informação apresentada é verdadeira ou não.
+                Nosso intuito é combater a desinformação e ajudar os usuários a identificarem notícias falsas em meio a um grande volume de informações online.
+            </p>
         </section>
-        
-        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-            <div style="flex: 1; min-width: 300px; background-color: white; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);">
-                <h3 style="color: #a777e3;">Serviço 1</h3>
-                <p>Descrição do primeiro serviço oferecido pela empresa. Um resumo breve das principais características.</p>
+
+        <section id="equipe">
+            <h2 class="section-title">A Equipe</h2>
+            <div class="team-members">
+                <div class="member">
+                    <h3>Allan</h3>
+                    <p>Desenvolvedor Backend</p>
+                </div>
+                <div class="member">
+                    <h3>Davi</h3>
+                    <p>Desenvolvedor Frontend</p>
+                </div>
+                <div class="member">
+                    <h3>Daniel</h3>
+                    <p>Especialista em IA</p>
+                </div>
+                <div class="member">
+                    <h3>Bryan</h3>
+                    <p>Designer</p>
+                </div>
+                <div class="member">
+                    <h3>Mateus</h3>
+                    <p>Analista de Dados</p>
+                </div>
+                <div class="member">
+                    <h3>Rafael</h3>
+                    <p>Gerente de Projeto</p>
+                </div>
             </div>
-            
-            <div style="flex: 1; min-width: 300px; background-color: white; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);">
-                <h3 style="color: #a777e3;">Serviço 2</h3>
-                <p>Descrição do segundo serviço oferecido pela empresa. Um resumo breve das principais características.</p>
-            </div>
-            
-            <div style="flex: 1; min-width: 300px; background-color: white; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);">
-                <h3 style="color: #a777e3;">Serviço 3</h3>
-                <p>Descrição do terceiro serviço oferecido pela empresa. Um resumo breve das principais características.</p>
-            </div>
-        </div>
-    </main>
-    
-    <footer style="background-color: #333; color: white; text-align: center; padding: 2rem 0; margin-top: 3rem;">
-        <p>© 2023 Minha Página Simples. Todos os direitos reservados.</p>
-        <div style="margin-top: 1rem;">
-            <a href="#" style="color: #6e8efb; margin: 0 10px; text-decoration: none;">Política de Privacidade</a>
-            <a href="#" style="color: #6e8efb; margin: 0 10px; text-decoration: none;">Termos de Uso</a>
-            <a href="#" style="color: #6e8efb; margin: 0 10px; text-decoration: none;">Contato</a>
-        </div>
+        </section>
+
+        <section id="contato">
+            <h2 class="section-title">Contato</h2>
+            <p class="description">
+                Para mais informações ou se você deseja entrar em contato conosco, envie um email para <a href="mailto:projeto.fake@fcte.edu.br">projeto.fake@fcte.edu.br</a>.
+            </p>
+        </section>
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Projeto FAKE | Todos os direitos reservados</p>
     </footer>
+
 </body>
 </html>
